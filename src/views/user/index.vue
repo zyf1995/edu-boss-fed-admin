@@ -1,14 +1,18 @@
 <template>
-  <div id="app">
-    <router-view/>
+  <div class="user">
+    <user-list />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import UserList from './components/UserList.vue'
 
 export default Vue.extend({
-  name: 'App',
+  name: 'UserIndex',
+  components: {
+    UserList
+  },
   data () {
     return {
 

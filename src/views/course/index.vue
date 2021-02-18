@@ -1,14 +1,18 @@
 <template>
-  <div id="app">
-    <router-view/>
+  <div class="course">
+    <course-list />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import CourseList from './components/CourseList.vue'
 
 export default Vue.extend({
-  name: 'App',
+  name: 'CourseIndex',
+  components: {
+    CourseList
+  },
   data () {
     return {
 

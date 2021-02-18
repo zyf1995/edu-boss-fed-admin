@@ -1,18 +1,22 @@
 <template>
-  <div id="app">
-    <router-view/>
+  <div class="resourceIndex">
+    <resource-list />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import ResourceList from './components/List.vue'
 
 export default Vue.extend({
-  name: 'App',
+  name: 'ResourceIndex',
   data () {
     return {
 
     }
+  },
+  components: {
+    ResourceList
   },
   methods: {
   }

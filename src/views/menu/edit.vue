@@ -1,20 +1,20 @@
 <template>
-  <div id="app">
-    <router-view/>
+  <div class="edit">
+    <create-or-edit />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import CreateOrEdit from './components/CreateOrEdit.vue'
 
 export default Vue.extend({
-  name: 'App',
+  name: 'MenuEdit',
   data () {
-    return {
-
-    }
+    return {}
   },
-  methods: {
+  components: {
+    CreateOrEdit
   }
 })
 </script>
